@@ -6,16 +6,20 @@
     <title>Portofolio Dian Rahmat Yuneri</title>
 
     <!-- CSS Eksternal-->
-    <link rel="stylesheet" href="styke.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- Header Content -->
-    <header>
+    <header class="flex justify-between items-center p-4">
+    
         <!--Logo-->
-        <div class="Logo"></div>
+        <div class="logo"></div>
 
         <!-- Navigation Menu-->
-         <nav class="flex">
+         <nav   class="flex">
             <a class="border-rounded p-2" href="#home-page">Home</a>
             <a class="border-rounded p-2" href="#our-profil-page">Our Profil</a>
             <a class="border-rounded p-2" href="#portofolio-page">Portofolio</a>
@@ -23,11 +27,67 @@
          </nav>
     </header>
 
-    <!-- Main Content -->
-    <main></main>
+    <hr>
+    
+    <main>
+        <!--Home Page-->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold"> Welcome To Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our service and offerings.</p>
+        </section>
+
+        <hr>
+        <!--Our Profile Page-->
+        <section id="our-profil-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold"> About Dian Rahmat Yuneri Company</h2>
+            <p class="mt-2">Dian Rahmat Yuneri is the best company for laboratorium services.</p>
+        </section>
+
+        <hr>
+        <!--Portofolio Page-->
+        <section id="portofolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portofolio</h2>
+            <p class="mt-2">Take a look at our diverse project that showcase our skills and expertise</p>
+        </section>
+
+        <hr>
+        <!--Message Us-->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have Questions or want to work with us? Send us a message and we'll get back to your promptly. </p>
+            </header>
+
+        <form>
+            <!--Input Nama-->
+            <div class="mb-4">
+                <label class="block mb-2" for="name">Nama:</label>
+                <input class="w-full p-2 border rounded" type="text" id="name" name="name" required/>
+            </div>
+
+            <!--Input Email-->
+            <div class="mb-4">
+                <label class="block mb-2" for="email">Email:</label>
+                <input class="w-full p-2 border rounded" type="email" id="email" name="email" required/>
+            </div>
+
+            <!--Input Message-->
+            <div class="mb-4">
+                <label class="block mb-2" for="message">Message:</label>
+                <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <!--Tombol Send Message-->
+            <button class="px-4 py-2 bg-blue-500 text-while rounded" type="button">Send Message</button>
+        </form>
+        </section>
+    </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <hr>
+        <p class="text-center p-2">@2026 Dian Rahmat Yuneri Company. All right reserved</p>
+    </footer>
 
     <!-- Java Script Content -->
     <script> src= "js/script.js"</script>

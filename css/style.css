@@ -1,0 +1,10 @@
+.logo{
+    height: 75px;
+    width: 75px;
+    background-color: gray;
+    border-radius: 55%;
+
+    /* tambahin gambar disini ya */
+    background-image: image();
+    background-size: cover;
+}
