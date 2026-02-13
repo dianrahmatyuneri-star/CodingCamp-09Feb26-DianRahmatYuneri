@@ -1,10 +1,119 @@
-.logo{
-    height: 75px;
-    width: 75px;
-    background-color: gray;
-    border-radius: 55%;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-    /* tambahin gambar disini ya */
-    background-image: image();
-    background-size: cover;
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* HEADER */
+header {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  color: #2563eb;
+}
+
+/* GRID PORTFOLIO */
+#portofolio-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+/* ANIMATION FADE */
+section {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: white;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+}
+
+.portfolio-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
 }

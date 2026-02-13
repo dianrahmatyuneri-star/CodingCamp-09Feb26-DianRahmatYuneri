@@ -45,9 +45,32 @@
 
         <hr>
         <!--Portofolio Page-->
-        <section id="portofolio-page" class="min-h-[500px] text-center content-center">
+        <section id="portofolio-page" class="min-h-[500px] text-center">
+            <div class="mb-12">
             <h2 class="text-xl font-bold">Our Portofolio</h2>
             <p class="mt-2">Take a look at our diverse project that showcase our skills and expertise</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 mt-8">
+            
+            <div class="card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.pexels.com/photos/32121261/pexels-photo-32121261.jpeg" alt="Laboratory Testing" class="w-full h-40 object-cover">
+                <h3 class="p-4 font-semibold">Laboratory Testing</h3>
+            </div>
+            
+            <div class="card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?q=80&w=3025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quality Control" class="w-full h-40 object-cover">
+                <h3 class="p-4 font-semibold">Quality Control </h3>
+            </div>
+
+            <div class="card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1579165466991-467135ad3110?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tools Calibration" class="w-full h-40 object-cover">
+                <h3 class="p-4 font-semibold">Tools Calibration</h3>
+            </div>
+
+            <div class="card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consulting Services" class="w-full h-40 object-cover">
+                <h3 class="p-4 font-semibold">Consulting Services</h3>
+            </div>
         </section>
 
         <hr>
@@ -55,7 +78,7 @@
         <section id="message-us-page" class="min-h-[500px] mx-8">
             <header>
                 <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have Questions or want to work with us? Send us a message and we'll get back to your promptly. </p>
+                <p class="mt-2">Have Questions or want to work with us? Send us a message and we'll get back to you promptly. </p>
             </header>
 
         <form id="messageForm" novalidate class="max-w-md mx-auto">
@@ -75,7 +98,7 @@
 
         <!-- Input Pesan -->
             <div class="mb-4"><label class="block mb-2" for="message">Message:</label><textarea 
-                class="w-full p-2 border rounded" id="message" name="message" rows="5" placeholder="Pleases input your message..."></textarea>
+                class="w-full p-2 border rounded" id="message" name="message" rows="5" placeholder="Please input your message..."></textarea>
                 <small id="messageError" class="text-red-500"></small>
             </div>
 
